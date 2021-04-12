@@ -5,15 +5,15 @@ const notebookSchema = new Schema({
   title: {
     type: String,
     trim: true,
-    required: 'Title is Required',
+    required: 'Title is Required'
   },
 
   createdAt: {
     type: Date,
-    default: Date.now,
+    default: Date.now
   },
 
-  notes: [noteSchema],
+  notes: [noteSchema]
 });
 
 const Notebook = model('Notebook', notebookSchema);
